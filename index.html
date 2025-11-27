@@ -3,28 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="KyV44FNqc5RfkM3xYBng5iLbtkCryKLFwSmW1BEIyXI" />
-    <title>Freelancer Portfolio</title>
+      <meta name="google-site-verification" content="KyV44FNqc5RfkM3xYBng5iLbtkCryKLFwSmW1BEIyXI" />
 
-    <!-- Bootstrap CSS -->
+    <title>SEO Agency Website</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        /* Hero Section */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Banner */
         #hero {
-            background: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546') center/cover no-repeat;
             height: 80vh;
+            background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40') center/cover no-repeat;
             display: flex;
             align-items: center;
-            color: white;
-            text-shadow: 1px 1px 4px black;
+            color: #fff;
+            text-shadow: 2px 2px 5px black;
         }
 
-        /* About Image */
-        .about-img {
-            border-radius: 10px;
+        /* Section Titles */
+        h2 {
+            font-weight: 700;
         }
 
-        /* Service Card */
-        .service-c
+        /* Cards Hover */
+        .service-card, .case-card {
+            transition: 0.3s;
+        }
 
+        .service-card:hover, .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">SEO Agency</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#cases" class="nav-link">Case Studies</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="container text-center">
+        <h1 class="display-3 fw-bold">Grow Your Business With SEO</h1>
+        <p class="lead">Result-driven SEO strategies designed to increase your traffic, leads, and conversions.</p>
+        <a href="#contact" class="btn btn-primary btn-lg mt-3">Get a Free Audit</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Our SEO Agency</h2>
+
+        <p class="fs-5 text-center">
+            We are a performance-focused SEO agency helping brands strengthen their digital presence
+            and achieve sustainable online growth. Our team combines data-driven strategies, technical expertise,
+            and deep industry understanding to help businesses dominate search engine results. Whether you’re a
+            startup or an established enterprise, we tailor every SEO campaign to your goals, ensuring long-term
+            results, consistent traffic growth, and enhanced visibility across Google and other major search platforms.
+        </p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our SEO Services</h2>
+
+        <p class="text-center mb-5 fs-5">
+            We provide complete end-to-end SEO solutions designed to improve your search rankings,
+            enhance your website performance, and drive qualified traffic that converts into customers.
+        </p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-white rounded service-card shadow-sm">
+                    <h4>On-Page Optimization</h4>
+                    <p>
+                        We optimize every element of your website—meta tags, content structure, keyword placement,
+                        internal linking, and page experience—to ensure maximum search engine visibility and improved rankings.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-white rounded service-card shadow-sm">
+                    <h4>Technical SEO</h4>
+                    <p>
+                        From fixing crawl errors to improving site speed, mobile responsiveness, schema markup,
+                        and indexability, we ensure your website meets all technical requirements for top-tier SEO performance.
+                    </p>
+                </div>
